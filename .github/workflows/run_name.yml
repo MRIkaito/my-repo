@@ -3,4 +3,6 @@ run-name: Run by @${{ github.actor }}
 on: push
 jobs:
   print:
-    - run: echo "Hello"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello"
